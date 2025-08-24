@@ -8,4 +8,4 @@ I wanted to educate dog owners on how they can use dog treats to train their dog
 
 I made this project by following multiple tutorials and coded the rest with my own knowledge and eventhough there were lots of errors I am really happy with the final product!
 
-I struggled with making the CSS of the website, the circular display of the images, and making the website usable on a phone and a computer.
+I struggled with making the CSS of the website, the circular display of the images, and making the website usable on a phone and a computer. I learned how to make a website look neater through CSS!
