@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/jpg" sizes="32x32" href="logo.jpg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="index.css">
+  <title>Dog Treats</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+
+</head>
+
+<body class="crew">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="logo.png" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+        aria-expanded="false">Menu</span></button>
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span
+              aria-hidden="true">01</span>Product</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span
+              aria-hidden="true">02</span>Ingredients</a>
+        <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span
+              aria-hidden="true">03</span>Train</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span
+              aria-hidden="true">04</span>Display</a>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="grid-container grid-container--crew flow">
+    <h1 class="numbered-title"><span aria-hidden="true">03</span> Train Dogs</h1>
+
+    <div class="dot-indicators flex" role="tablist" aria-label="crew member list">
+      <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image"
+        tabindex="0"><span class="sr-only">Pick the Right Treats</span></button>
+      <button aria-selected="false" aria-controls="mission-tab" role="tab" data-image="mission-image"
+        tabindex="-1"><span class="sr-only">Give Clear Commands</span></button>
+      <button aria-selected="false" aria-controls="pilot-tab" role="tab" data-image="pilot-image" tabindex="-1"><span
+          class="sr-only">Reward Immediately</span></button>
+      <button aria-selected="false" aria-controls="crew-tab" role="tab" data-image="crew-image" tabindex="-1"><span
+          class="sr-only">Repeat and Reduce Treats</span></button>
+    </div>
+
+    
+    <article class="crew-details flow" id="commander-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">Pick the Right Treats</h2>
+      </header>
+      <p>Not all treats are equally motivating for dogs. Small, soft, and smelly treats (like tiny pieces of chicken or store-bought training bites) usually work best, because dogs can eat them quickly and stay focused. Hard biscuits can take too long to chew and may distract your dog. Choosing healthy treats also prevents weight gain if you’re training often.</p>
+    </article>
+
+    
+    <article hidden class="crew-details flow" id="mission-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">Give Clear Commands</h2>
+      </header>
+      <p>Dogs learn best when the words and tone you use are always the same. For example, if you want your dog to sit, always say “Sit” instead of mixing it with “Sit down” or “Please sit.” Speak in a calm but firm voice and pair the word with a hand signal if you want. This consistency helps your dog understand what you’re asking.</p>
+    </article>
+
+    
+    <article hidden class="crew-details flow" id="pilot-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">Reward Immediately</h2>
+      </header>
+      <p>Timing is everything. The moment your dog performs the behavior—like sitting—you should give the treat right away. If you wait too long, your dog may not connect the action with the reward and could think you’re rewarding something else. Quick rewards teach them exactly which behavior earned the treat.</p>
+    </article>
+
+    
+    <article hidden class="crew-details flow" id="crew-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">Repeat and Reduce Treats</h2>
+      </header>
+      <p>Repetition is how dogs learn. Practice commands in short sessions (5–10 minutes) several times a day, so your dog doesn’t get bored. Once your dog consistently obeys, start rewarding with treats less often, and mix in praise, petting, or play. This way, your dog doesn’t only listen when food is involved but also responds to you because they’ve built the habit.</p>
+    </article>
+
+    <picture id="commander-image">
+      <source srcset="dog-treat.jpg" type="image/png">
+      <img src="dog-treat.jpg">
+    </picture>
+    <picture hidden id="mission-image">
+      <source srcset="command.jpg" type="image/png">
+      <img src="command.jpg">
+    </picture>
+    <picture hidden id="pilot-image">
+      <source srcset="reward.jpg" type="image/jpg">
+      <img src="reward.jpg">
+    </picture>
+    <picture hidden id="crew-image">
+      <source srcset="repeat.jpg" type="image/jpg">
+      <img src="repeat.jpg">
+    </picture>
+  </main>
+</body>
+
+</html>

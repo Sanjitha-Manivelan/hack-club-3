@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/jpg" sizes="32x32" href="logo.jpg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      
+  
+  <link rel="stylesheet" href="index.css">
+  <title>Dog Treats</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+</head>
+
+<body class="destination">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="logo.png" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">01</span>Product</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">02</span>Ingredients</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span aria-hidden="true">03</span>Train</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span aria-hidden="true">04</span>Display</a>
+        </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--destination flow">
+    <h1 class="numbered-title"><span aria-hidden="true">02</span> The Ingredients Inside Dog Treats</h1>
+    
+    <picture id="moon-image">
+      <source srcset="2.jpg" type="image/jpg">
+      <img src="2.jpg">
+    </picture>
+    <picture hidden id="mars-image">
+      <source srcset="4.jpg" type="image/jpf">
+      <img src="4.jpg">
+    </picture>
+    <picture hidden id="europa-image">
+      <source srcset="0.jpg" type="image/jpg">
+      <img src="0.jpg">
+    </picture>
+    
+    
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+        <button aria-selected="true" role="tab" aria-controls="moon-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="0" data-image="moon-image">Ingredient</button>
+        <button aria-selected="false" role="tab" aria-controls="mars-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="mars-image">Ingredient</button>
+        <button aria-selected="false" role="tab" aria-controls="europa-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="europa-image">Ingredients</button>
+    </div>
+
+    
+    <article class="destination-info flow" id="moon-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-600 ff-serif uppercase">Meaty Slim Sticks</h2>
+
+      <p>Meaty Slim Sticks Made With Salmon, Chicken, Pea Protein, Vegetable
+        Glycerin, Salt</p>
+    </article>
+    
+    
+    <article hidden class="destination-info flow" id="mars-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-600 ff-serif uppercase">Soft Savories</h2>
+
+      <p>Soft Savories have Potatoes, Wheat Flour, Peanut Butter, Cane Molasses, Glycerin, Chicken Fat, Peanuts, Bananas, Peas, Technical Pork Gelatin, Natural Flavor, Dried Skimmed Milk, Citric Acid for Freshness, Lactic Acid, Mixed Tocopherols for freshness</p>
+    </article>
+    
+    
+    <article hidden class="destination-info flow" id="europa-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-600 ff-serif uppercase">Fall Favorite P-Nuttier</h2>
+
+      <p>Fall Favorite P-Nuttier contains Whole Wheat Flour, Oatmeal, Wheat Bran, Chicken Fat, Crunchy Peanut Butter, Apples, Carrots, Cane Molasses, Eggs, Maltodextrin, Salt, Natural Peanut Flavor, Mixed Tocopherols added to preserve freshness, Rosemary Extract, Green Tea Extract, Spearmint Extract</p>
+    </article>
+  </main>
+  
+<body>
+</body>
+</html>
