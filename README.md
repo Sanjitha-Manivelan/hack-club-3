@@ -4,8 +4,6 @@
 
 I've created a website that discusses dog treats and how to use them, and I coded it in HTML, CSS, and JavaScript.
 
-I created the magic squares game where the numbers on the board must be consecutive and each number can only appear once. Also the sum of the numbers in each row, column, and diagonals must be the same.
-
 I wanted to educate dog owners on how they can use dog treats to train their dogs and share more information on dog treats!
 
 I made this project by following multiple tutorials and coded the rest with my own knowledge and eventhough there were lots of errors I am really happy with the final product!
